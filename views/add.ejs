@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include ('partials/head.ejs'); -%>
+<body>
+    <%- include ('partials/nav.ejs'); -%>
+
+    <div class = "create-exercise content">
+    <form action = "/api/exercise/add" method = "post">
+        <label for="title">User ID</label>
+        <input type="text" id="title" name = "userId" required>
+        <label for="description">Description</label>
+        <input type="text" id="description" name ="description">
+        <label for="duration">Duration: </label>
+        <input type ="text" id="duration" name ="duration">
+        <label for="date">Date:</label>
+        <input type ="text" id="date" name = "date">
+        <button>Submit</button>
+    </form>
+</div>
+</body>
+
+</html>

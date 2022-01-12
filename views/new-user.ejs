@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include ('partials/head.ejs'); -%>
+<body>
+    <%- include ('partials/nav.ejs'); -%>
+    <div class = "user content">
+    <form action="/api/users" method="post">
+        <h3>Create a New User</h3>
+        <p><code>POST /api/users</code></p>
+        <input id="uname" type="text" name="username" placeholder="username" />
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+</body>
+
+</html>
